@@ -7,6 +7,7 @@ package buscadordepalabras;
 
 import ioDatos.Archivo;
 import ioDatos.Buscador;
+import java.util.Scanner;
 
 /**
  *
@@ -24,7 +25,16 @@ public class Buscadordepalabras {
         a.crear();
         
         Buscador b = new Buscador();
-        b.palabras();
+        String[] vPalabras = new String[10];
+        Scanner leer=null;
+        for (int i = 0; i < vPalabras.length; i++) {
+            if (vPalabras[i]!=null) {
+                vPalabras[i]=leer.nextLine(); 
+            }
+           
+        }
+       b.palabras(vPalabras);
+       
     }
     
 }

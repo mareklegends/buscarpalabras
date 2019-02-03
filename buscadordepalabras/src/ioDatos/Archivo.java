@@ -73,9 +73,7 @@ public class Archivo {
           
     }
     
-    public void buscar(){
-        
-    }
+ 
     
     
     
